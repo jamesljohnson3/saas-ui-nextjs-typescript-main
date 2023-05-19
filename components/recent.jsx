@@ -2,7 +2,7 @@ import Section 		from '../components/structure/section';
 import Container 	from '../components/structure/container';
 
 import Image from 'next/image'
-import SectionTitle from '../compnents/section.title.block'
+import SectionTitle from '../components/section.title.block'
 
 
 import css from '../styles/sections/articles/recent.module.scss'
