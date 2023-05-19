@@ -7,7 +7,7 @@ import {
   ResponsiveValue,
 } from '@chakra-ui/react'
 
-import Link, { LinkProps } from '@/components/link'
+import Link, { LinkProps } from '../../components/link'
 
 export interface FooterProps extends BoxProps {
   columns?: ResponsiveValue<number>
