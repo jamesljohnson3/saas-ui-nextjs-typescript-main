@@ -10,11 +10,9 @@ import {
 } from '@chakra-ui/react'
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 
-import { useRouter } from 'next/router'
 
 import headerNav from '../data/header-nav'
 import NavLink from '../components/nav-link'
-import { useScrollSpy } from '../hooks/use-scrollspy'
 import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
 
 import ThemeToggle from './theme-toggle'
@@ -25,13 +23,6 @@ import { GlobalSearch } from '../components/global-search/global-search'
 const Header = () => {
   const mobileNav = useDisclosure()
   const isDesktop = useBreakpointValue({ xl: true })
-  const router = useRouter()
-  const activeId = useScrollSpy(
-    headerNav.filter(({ id }) => id).map(({ id }) => `[id="${id}"]`),
-    {
-      threshold: 0.75,
-    }
-  )
 
   const mobileNavBtnRef = React.useRef<HTMLButtonElement>()
 
@@ -72,10 +63,7 @@ const Header = () => {
               display={{ base: 'none', lg: 'block' }}
               href={href || `/#${id}`}
               key={i}
-              isActive={
-                (id && activeId === id) ||
-                (href && !!router.asPath.match(new RegExp(href)))
-              }
+           
               {...props}
             />
           )
