@@ -74,10 +74,7 @@ const Header = () => {
               display={{ base: 'none', lg: 'block' }}
               href={href || `/#${id}`}
               key={i}
-              isActive={
-                (id && activeId === id) ||
-                (href && !!router.asPath.match(new RegExp(href)))
-              }
+             
               {...props}
             />
           )
