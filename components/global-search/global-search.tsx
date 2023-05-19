@@ -8,7 +8,6 @@ import {
   CommandBarInput,
   CommandBarItem,
   CommandBarList,
-  useCommandState,
 } from '@saas-ui/command-bar'
 
 import coreSidebar from '../../data/core-sidebar'
