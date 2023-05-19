@@ -39,8 +39,7 @@ export const Layout = ({
               </HStack>
             </nav>
           </Flex>
-          <ColorModeSwitcher justifySelf="flex-end" />
-        </Flex>
+Icon        </Flex>
       </header>
       {children}
     </Container>

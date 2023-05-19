@@ -71,15 +71,7 @@ const Header = () => {
           )
         })}
 
-        <Tooltip label="Feedback &amp; Roadmap">
-          <IconButton
-            variant="ghost"
-            aria-label="roadmap"
-            borderRadius="md"
-            as={Link}
-            href="https://roadmap.saas-ui.dev"
-          />
-        </Tooltip>
+      
 
         <Tooltip label="Discord community">
           <IconButton
@@ -114,7 +106,7 @@ const Header = () => {
           />
         </Tooltip>
 
-        <ThemeToggle />
+    Icon
 
         <MobileNavButton
           aria-label="Open Menu"
