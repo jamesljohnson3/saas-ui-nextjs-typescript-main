@@ -13,15 +13,14 @@ import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 
 import { useRouter } from 'next/router'
 
-import headerNav from '@/data/header-nav'
-import NavLink from '@/components/nav-link'
-import { useScrollSpy } from '@/hooks/use-scrollspy'
-import { MobileNavButton } from '@/docs/components/mobile-nav'
-import { MobileNavContent } from '@/docs/components/mobile-nav'
+import headerNav from '../../data/header-nav'
+import {NavLink} from '../../components/nav-link/nav-link'
+import { useScrollSpy } from '../../hooks/use-scrollspy'
+import { MobileNavButton } from '../../components/mobile-nav'
+import { MobileNavContent } from '../../components/mobile-nav'
 import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
 
 import ThemeToggle from './theme-toggle'
-import { ProductLaneLogo } from '../logos/productlane'
 import { SearchInput, useHotkeys } from '@saas-ui/react'
 
 import { GlobalSearch } from '../global-search/global-search'
@@ -89,7 +88,6 @@ const Header = () => {
           <IconButton
             variant="ghost"
             aria-label="roadmap"
-            icon={<ProductLaneLogo boxSize="3" />}
             borderRadius="md"
             as={Link}
             href="https://roadmap.saas-ui.dev"
