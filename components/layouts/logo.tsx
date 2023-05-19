@@ -5,7 +5,7 @@ import {
   useBreakpointValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import AccessibleLink from '@/components/link'
+import AccessibleLink from '../../components/link'
 import React from 'react'
 
 export interface LogoProps {
@@ -13,7 +13,7 @@ export interface LogoProps {
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void
 }
 
-import siteConfig from '@/data/site-config'
+import siteConfig from '../../data/site-config'
 
 const Logo = ({ href = '/', onClick }: LogoProps) => {
   const isMobile = useBreakpointValue({ base: true, sm: false })
