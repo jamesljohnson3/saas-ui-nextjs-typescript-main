@@ -17,9 +17,10 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (
     <SaasProvider linkComponent={Link}>
          <Layout
-        announcement={pageProps.announcement}
-        header={pageProps.header}
-        footer={pageProps.footer !== false ? <Footer /> : null} children={undefined}          >
+            announcement={pageProps.announcement}
+            header={pageProps.header}
+            footer={pageProps.footer !== false ? <Footer /> : null}
+          >
       <Component {...pageProps} /></Layout>
     </SaasProvider>
   )
