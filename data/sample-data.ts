@@ -1,11 +1,3 @@
-interface ExampleData {
-  name: string
-  phone: string
-  email: string
-  company: string
-  country: string
-  employees: number
-}
 
 const columns = [
   {
