@@ -26,7 +26,9 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
         announcement={pageProps.announcement}
         header={pageProps.header} footer={undefined}
           >
-               <div className="relative bg-white pt-16 pb-32 overflow-hidden">
+               
+       <LazyMotion features={domAnimation}>
+      <Component {...pageProps} /><div className="relative bg-white pt-16 pb-32 overflow-hidden">
       <div className="relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
@@ -127,9 +129,7 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
           </div>
         </div>
       </div>
-    </div>
-       <LazyMotion features={domAnimation}>
-      <Component {...pageProps} /></LazyMotion><Footer /></Layout>
+    </div></LazyMotion><Footer /></Layout>
     </SaasProvider>
   )
 }
