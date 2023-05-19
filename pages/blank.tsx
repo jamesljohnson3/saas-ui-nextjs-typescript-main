@@ -1,4 +1,4 @@
-import { Box, VStack, Grid, Flex, Link, SimpleGrid, Stack, chakra } from '@chakra-ui/react'
+import { Box, VStack, Grid, Flex, Link, Stack, chakra } from '@chakra-ui/react'
 import { Layout } from '../components/Layout'
 
 const IndexPage = () => {
@@ -8,87 +8,84 @@ const IndexPage = () => {
         <Grid minH="100vh" p={3}>
           <VStack spacing={8}>
           <Flex
-  w="full"
   bg="#edf3f8"
   _dark={{
     bg: "#3e3e3e",
   }}
   p={50}
+  w="full"
   alignItems="center"
   justifyContent="center"
 >
-  <SimpleGrid
-    columns={[1, , 2]}
-    gap="24px"
-    mx="auto"
-    textAlign={["left", , "center"]}
+  <Box
+    bg="gray.50"
+    _dark={{
+      bg: "gray.800",
+    }}
   >
     <Box
-      bg="white"
-      _dark={{
-        bg: "gray.800",
+      maxW="7xl"
+      w={{
+        md: "3xl",
+        lg: "4xl",
       }}
-      px={4}
-      py={24}
-      shadow="base"
-      rounded="md"
+      mx="auto"
+      py={{
+        base: 12,
+        lg: 16,
+      }}
+      px={{
+        base: 4,
+        lg: 8,
+      }}
+      display={{
+        lg: "flex",
+      }}
+      alignItems={{
+        lg: "center",
+      }}
+      justifyContent={{
+        lg: "space-between",
+      }}
     >
-      <chakra.p
-        mb={1}
-        fontSize="xs"
-        fontWeight="bold"
-        letterSpacing="wide"
-        textTransform="uppercase"
-        color="gray.500"
-        _dark={{
-          color: "gray.400",
+      <chakra.h2
+        fontSize={{
+          base: "3xl",
+          sm: "4xl",
         }}
-      >
-        For Developers
-      </chakra.p>
-      <Text
-        mb={2}
-        fontSize="5xl"
-        fontWeight={["bold", "extrabold"]}
+        fontWeight="extrabold"
+        letterSpacing="tight"
+        lineHeight="shorter"
         color="gray.900"
         _dark={{
-          color: "gray.50",
+          color: "gray.100",
         }}
-        lineHeight="tight"
       >
-        $9
+        <chakra.span display="block">Ready to dive in?</chakra.span>
         <chakra.span
-          fontSize="2xl"
-          fontWeight="medium"
-          color="gray.600"
+          display="block"
+          color="brand.600"
           _dark={{
-            color: "gray.400",
+            color: "gray.500",
           }}
         >
-          {" "}
-          per month
+          Start your free trial today.
         </chakra.span>
-      </Text>
-      <chakra.p
-        mb={6}
-        fontSize="lg"
-        color="gray.600"
-        _dark={{
-          color: "gray.500",
+      </chakra.h2>
+      <Stack
+        direction={{
+          base: "column",
+          sm: "row",
+        }}
+        mt={{
+          base: 8,
+          lg: 0,
+        }}
+        flexShrink={{
+          lg: 0,
         }}
       >
-        One plan for any organization—from startups to Fortune 500s. We offer
-        50% off of for all students and universities. Please get in touch with
-        us and provide proof of your status.
-      </chakra.p>
-      <Stack
-        display={["block", , "flex"]}
-        spacing={2}
-        justifyContent="center"
-        direction={["column", , "row"]}
-      >
         <Link
-          w={["full", , "auto"]}
           display="inline-flex"
           alignItems="center"
           justifyContent="center"
@@ -115,7 +112,6 @@ const IndexPage = () => {
           Get started
         </Link>
         <Link
-          w={["full", , "auto"]}
           display="inline-flex"
           alignItems="center"
           justifyContent="center"
@@ -131,125 +127,12 @@ const IndexPage = () => {
             bg: "brand.50",
           }}
         >
-          Contact Us
+          Learn More
         </Link>
       </Stack>
     </Box>
-
-    <Box
-      bg="white"
-      _dark={{
-        bg: "gray.800",
-      }}
-      px={4}
-      py={24}
-      shadow="base"
-      rounded="md"
-    >
-      <chakra.p
-        mb={1}
-        fontSize="xs"
-        fontWeight="bold"
-        letterSpacing="wide"
-        textTransform="uppercase"
-        color="gray.500"
-        _dark={{
-          color: "gray.400",
-        }}
-      >
-        For Designers
-      </chakra.p>
-      <Text
-        mb={2}
-        fontSize="5xl"
-        fontWeight={["bold", "extrabold"]}
-        color="gray.900"
-        _dark={{
-          color: "gray.50",
-        }}
-        lineHeight="tight"
-      >
-        $19
-        <chakra.span
-          fontSize="2xl"
-          fontWeight="medium"
-          color="gray.600"
-          _dark={{
-            color: "gray.400",
-          }}
-        >
-          {" "}
-          per month
-        </chakra.span>
-      </Text>
-      <chakra.p
-        mb={6}
-        fontSize="lg"
-        color="gray.600"
-        _dark={{
-          color: "gray.500",
-        }}
-      >
-        One plan for any organization—from startups to Fortune 500s. We offer
-        50% off of for all students and universities. Please get in touch with
-        us and provide proof of your status.
-      </chakra.p>
-      <Stack
-        display={["block", , "flex"]}
-        spacing={2}
-        justifyContent="center"
-        direction={["column", , "row"]}
-      >
-        <Link
-          w={["full", , "auto"]}
-          display="inline-flex"
-          alignItems="center"
-          justifyContent="center"
-          px={5}
-          py={3}
-          border="solid transparent"
-          fontWeight="bold"
-          rounded="md"
-          shadow="md"
-          _light={{
-            color: "white",
-          }}
-          bg="brand.600"
-          _dark={{
-            bg: "brand.500",
-          }}
-          _hover={{
-            bg: "brand.700",
-            _dark: {
-              bg: "brand.600",
-            },
-          }}
-        >
-          Get started
-        </Link>
-        <Link
-          w={["full", , "auto"]}
-          display="inline-flex"
-          alignItems="center"
-          justifyContent="center"
-          px={5}
-          py={3}
-          border="solid transparent"
-          fontWeight="bold"
-          rounded="md"
-          shadow="md"
-          color="brand.600"
-          bg="white"
-          _hover={{
-            bg: "brand.50",
-          }}
-        >
-          Contact Us
-        </Link>
-      </Stack>
-    </Box>
-  </SimpleGrid>
-</Flex>     </VStack>
+  </Box>
+</Flex>   </VStack>
         </Grid>
       </Box>
     </Layout>
