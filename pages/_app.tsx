@@ -19,9 +19,9 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
          <Layout
             announcement={pageProps.announcement}
             header={pageProps.header}
-            footer={pageProps.footer !== false ? <Footer /> : null}
+
           >
-      <Component {...pageProps} /></Layout>
+      <Component {...pageProps} /><Footer /></Layout>
     </SaasProvider>
   )
 }
