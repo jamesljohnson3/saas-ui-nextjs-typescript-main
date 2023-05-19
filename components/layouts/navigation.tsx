@@ -27,13 +27,6 @@ import { GlobalSearch } from '../global-search/global-search'
 const Header = () => {
   const mobileNav = useDisclosure()
   const isDesktop = useBreakpointValue({ xl: true })
-  const router = useRouter()
-  const activeId = useScrollSpy(
-    headerNav.filter(({ id }) => id).map(({ id }) => `[id="${id}"]`),
-    {
-      threshold: 0.75,
-    }
-  )
 
   const mobileNavBtnRef = React.useRef<HTMLButtonElement>()
 
