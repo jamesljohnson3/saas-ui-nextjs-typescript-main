@@ -65,6 +65,7 @@
     "@chakra-ui/theme-tools": "^2.0.12",
     "@saas-ui/react": "1.6.1",
     "@svgr/webpack": "^6.5.1",
+    
     "react-remove-scroll": "^2.5.5",
     "canvas-confetti": "^1.6.0",
     "contentlayer": "^0.3.2",
@@ -201,7 +202,6 @@
 		"autoprefixer": "^10.4.12",
 		"cssjanus": "^2.1.0",
 		"cypress": "^9.6.0",
-    "contentlayer": "^0.2.9",
 		"eslint-config-prettier": "^8.3.0",
 		"husky": "^8.0.1",
 		"lint-staged": "^13.0.1",
