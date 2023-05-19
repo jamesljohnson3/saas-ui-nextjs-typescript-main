@@ -15,7 +15,7 @@ export interface SectionProps
   innerWidth?: StyleProps['width']
 }
 
-export const Section: React.FC<SectionProps> = (props) => {
+export const Section = (props: { [x: string]: any; children: any; innerWidth?: "container.lg" | undefined; className: any }) => {
   const { children, innerWidth = 'container.lg', className, ...rest } = props
   const styles = useStyleConfig('Section', rest)
 

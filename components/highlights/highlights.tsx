@@ -4,21 +4,19 @@ import {
   GridItem,
   GridItemProps,
   Heading,
-  Text,
   useColorModeValue,
   useTheme,
-  VStack,
 } from '@chakra-ui/react'
 import { transparentize } from '@chakra-ui/theme-tools'
-import { Card, CardProps, Link } from '@saas-ui/react'
-import { Section, SectionProps } from 'components/section'
-import { Testimonial, TestimonialProps } from 'components/testimonials'
+import { Card, CardProps } from '@saas-ui/react'
+import { Section, SectionProps } from '../../components/section'
+import { Testimonial, Testimonials } from '../../components/testimonials'
 
 export interface HighlightBoxProps
   extends GridItemProps,
     Omit<CardProps, 'title'> {}
 
-export const HighlightsItem: React.FC<HighlightBoxProps> = (props) => {
+export const HighlightsItem = (props: { [x: string]: any; children: any; title: any }) => {
   const { children, title, ...rest } = props
   return (
     <GridItem
@@ -43,9 +41,7 @@ export const HighlightsItem: React.FC<HighlightBoxProps> = (props) => {
   )
 }
 
-export const HighlightsTestimonialItem: React.FC<
-  HighlightBoxProps & TestimonialProps & { gradient: [string, string] }
-> = (props) => {
+export const HighlightsTestimonialItem = (props: { [x: string]: any; name: any; description: any; avatar: any; children: any; gradient?: string[] | undefined }) => {
   const {
     name,
     description,
@@ -56,25 +52,18 @@ export const HighlightsTestimonialItem: React.FC<
   } = props
   const theme = useTheme()
   return (
-    <HighlightsItem
-      justifyContent="center"
-      _dark={{ borderColor: 'whiteAlpha.300' }}
-      p="4"
-      {...rest}
-    >
-      <Box
-        bgGradient={`linear(to-br, ${transparentize(
-          gradient[0],
-          0.8
-        )(theme)}, ${transparentize(gradient[1], 0.8)(theme)})`}
-        opacity="1"
-        position="absolute"
-        inset="0px"
-        pointerEvents="none"
-        zIndex="0"
-        _dark={{ opacity: 0.5, filter: 'blur(50px)' }}
-      />
-      <Testimonial
+   
+      <><Box
+      bgGradient={`linear(to-br, ${transparentize(
+        gradient[0],
+        0.8
+      )(theme)}, ${transparentize(gradient[1], 0.8)(theme)})`}
+      opacity="1"
+      position="absolute"
+      inset="0px"
+      pointerEvents="none"
+      zIndex="0"
+      _dark={{ opacity: 0.5, filter: 'blur(50px)' }} /><Testimonial
         name={name}
         description={<Box color="whiteAlpha.700">{description}</Box>}
         avatar={avatar}
@@ -85,21 +74,18 @@ export const HighlightsTestimonialItem: React.FC<
         position="relative"
       >
         {children}
-      </Testimonial>
-    </HighlightsItem>
+      </Testimonial></>
+
   )
 }
 
-export const Highlights: React.FC<SectionProps> = (props) => {
+export const Highlights = (props: { [x: string]: any; children: any }) => {
   const { children, ...rest } = props
 
   return (
     <Section
-      innerWidth="container.xl"
-      position="relative"
-      overflow="hidden"
-      {...rest}
-    >
+      children={undefined} className={undefined} position="relative"
+      {...rest}    >
       <Grid
         templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(3, 1fr)' }}
         gap={8}

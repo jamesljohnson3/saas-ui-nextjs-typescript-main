@@ -13,7 +13,7 @@ export interface SectionTitleProps extends Omit<StackProps, 'title'> {
   variant?: string
 }
 
-export const SectionTitle: React.FC<SectionTitleProps> = (props) => {
+export const SectionTitle = (props: { [x: string]: any; title: any; description: any; align: any; variant: any }) => {
   const { title, description, align, variant, ...rest } = props
   const styles = useMultiStyleConfig('SectionTitle', { variant })
 
