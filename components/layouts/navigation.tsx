@@ -10,11 +10,9 @@ import {
 } from '@chakra-ui/react'
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 
-import { useRouter } from 'next/router'
 
 import headerNav from '../../data/header-nav'
 import {NavLink} from '../../components/nav-link/nav-link'
-import { useScrollSpy } from '../../hooks/use-scrollspy'
 import { MobileNavButton } from '../../components/mobile-nav'
 import { MobileNavContent } from '../../components/mobile-nav'
 import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
