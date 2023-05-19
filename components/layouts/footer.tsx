@@ -32,7 +32,7 @@ export const Footer= (props: { [x: string]: any; columns?: 2 | undefined }) => {
                 {siteConfig.seo.description}
               </Text>
             </Stack>
-            <Copyright children={undefined}>{siteConfig.footer.copyright}</Copyright>
+          Copyright
           </Stack>
           <HStack justify="flex-end" spacing="4" alignSelf="flex-end">
             {siteConfig.footer?.links?.map(({ href, label }) => (
@@ -47,25 +47,7 @@ export const Footer= (props: { [x: string]: any; columns?: 2 | undefined }) => {
   )
 }
 
-export interface CopyrightProps {
-  title?: React.ReactNode
-  children: React.ReactNode
-}
 
-export const Copyright = ({
-  title,
-  children,
-}: CopyrightProps) => {
-  let content
-  if (title && !children) {
-    content = `&copy; ${new Date().getFullYear()} - ${title}`
-  }
-  return (
-    <Text color="muted" fontSize="sm">
-      {content || children}
-    </Text>
-  )
-}
 
 export const FooterLink= (props: { [x: string]: any; children: any }) => {
   const { children, ...rest } = props
