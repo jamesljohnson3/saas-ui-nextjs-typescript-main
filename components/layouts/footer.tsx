@@ -9,7 +9,7 @@ import {
   HStack,
 } from '@chakra-ui/react'
 
-import { Link, LinkProps } from '@saas-ui/react'
+import { Link } from '@saas-ui/react'
 
 import siteConfig from '../../data/config'
 
