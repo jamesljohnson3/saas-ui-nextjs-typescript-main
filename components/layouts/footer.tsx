@@ -4,20 +4,44 @@ import {
   SimpleGrid,
   Container,
   Text,
-  ResponsiveValue,
+  Stack,
+  Flex,
+  HStack,
 } from '@chakra-ui/react'
 
-import Link, { LinkProps } from '../../components/link'
+import { Link, LinkProps } from '@saas-ui/react'
+
+import siteConfig from '../../data/config'
 
 export interface FooterProps extends BoxProps {
-  columns?: ResponsiveValue<number>
+  columns?: number
 }
 
-const Footer = ({ children, columns = 4, ...rest }: FooterProps) => {
+export const Footer: React.FC<FooterProps> = (props: { [x: string]: any; columns?: 2 | undefined }) => {
+  const { columns = 2, ...rest } = props
   return (
-    <Box {...rest}>
+    <Box bg="white" _dark={{ bg: 'gray.900' }} {...rest}>
       <Container maxW="container.2xl" px="8" py="8">
-        <SimpleGrid columns={columns}>{children}</SimpleGrid>
+        <SimpleGrid columns={columns}>
+          <Stack spacing="8">
+            <Stack alignItems="flex-start">
+              <Flex>
+                <Box as={siteConfig.logo} flex="1" height="32px" />
+              </Flex>
+              <Text fontSize="md" color="muted">
+                {siteConfig.seo.description}
+              </Text>
+            </Stack>
+            <Copyright>{siteConfig.footer.copyright}</Copyright>
+          </Stack>
+          <HStack justify="flex-end" spacing="4" alignSelf="flex-end">
+            {siteConfig.footer?.links?.map(({ href, label }) => (
+              <FooterLink key={href} href={href}>
+                {label}
+              </FooterLink>
+            ))}
+          </HStack>
+        </SimpleGrid>
       </Container>
     </Box>
   )
@@ -28,40 +52,35 @@ export interface CopyrightProps {
   children: React.ReactNode
 }
 
-export const Copyright = ({ title, children }: CopyrightProps) => {
+export const Copyright: React.FC<CopyrightProps> = ({
+  title,
+  children,
+}: CopyrightProps) => {
   let content
   if (title && !children) {
     content = `&copy; ${new Date().getFullYear()} - ${title}`
   }
   return (
-    <Text color="gray.400" fontSize="sm">
+    <Text color="muted" fontSize="sm">
       {content || children}
     </Text>
   )
 }
 
-export const FooterLink = ({ children, ...props }: LinkProps) => {
+export const FooterLink: React.FC<LinkProps> = (props: { [x: string]: any; children: any }) => {
+  const { children, ...rest } = props
   return (
     <Link
-      {...props}
-      color="gray.400"
+      color="muted"
       fontSize="sm"
       textDecoration="none"
       _hover={{
         color: 'white',
         transition: 'color .2s ease-in',
       }}
+      {...rest}
     >
       {children}
     </Link>
   )
 }
-
-export interface NavProps {
-  title: string
-  items: Array<any>
-}
-
-export const Nav = ({  }: NavProps) => {}
-
-export default Footer
