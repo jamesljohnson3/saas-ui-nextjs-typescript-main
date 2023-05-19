@@ -1,6 +1,5 @@
 import { Box, VStack, Grid } from '@chakra-ui/react'
 import { Layout } from '../components/Layout'
-import Blog from './blog';
 
 const IndexPage = () => {
   return (
@@ -9,7 +8,7 @@ const IndexPage = () => {
         <Grid minH="100vh" p={3}>
           <VStack spacing={8}>
            
-           <Blog mediumArticles={undefined}/>
+    
           </VStack>
         </Grid>
       </Box>
