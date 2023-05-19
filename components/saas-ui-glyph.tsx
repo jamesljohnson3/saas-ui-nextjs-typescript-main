@@ -1,27 +1,12 @@
 import * as React from 'react'
 import {
   chakra,
-  HTMLChakraProps,
-  keyframes,
-  useColorModeValue,
 } from '@chakra-ui/react'
 
-const dash = keyframes`
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 220%;
-  }
-`
 
-interface LogoGlyph extends HTMLChakraProps<'svg'> {
-  isAnimating?: boolean
-  variant?: 'solid' | 'gradient'
-  color?: string
-}
 
-const SaasUIGlyph: React.FC<LogoGlyph> = (props) => {
+
+const SaasUIGlyph = (props: any) => {
   const { isAnimating, variant = 'gradient', ...rest } = props
 
   return (
