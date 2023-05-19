@@ -9,7 +9,7 @@ import type { NextRouter } from 'next/router'
 import Link from 'next/link'
 import Layout from '../components/layouts'
 import { AppProps } from 'next/app'
-import Footer from '../components/layouts/footer'
+import {Footer} from '../components/layouts/footer'
 
 import { LazyMotion, domAnimation } from "framer-motion"
 
