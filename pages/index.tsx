@@ -234,8 +234,7 @@ const IndexPage = () => {
                   onClick={() => setOpen(false)}
                 >
                   <span className="sr-only">Close menu</span>
-                  <XIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+X                </button>
               </div>
 
               {/* Links */}
