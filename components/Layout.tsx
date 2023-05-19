@@ -85,7 +85,7 @@ const Header = () => {
           <IconButton
             variant="ghost"
             aria-label="roadmap"
-            icon={<ProductLaneLogo boxSize="3" />}
+            icon={<FaGithub size="14"/>}
             borderRadius="md"
             as={Link}
             href="https://roadmap.saas-ui.dev"
