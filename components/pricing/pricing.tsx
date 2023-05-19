@@ -33,10 +33,10 @@ export const Pricing = (props: { [x: string]: any; children: any; plans: any; ti
   const { children, plans, title, description, ...rest } = props
 
   return (
-    <Section id="pricing" pos="relative" {...rest}>
+    <Section children={undefined} className={undefined} id="pricing" pos="relative" {...rest}>
       <BackgroundGradient height="100%" />
       <Box zIndex="2" pos="relative">
-        <SectionTitle title={title} description={description}></SectionTitle>
+        <SectionTitle title={title} description={description} align={undefined} variant={undefined}></SectionTitle>
 
         <SimpleGrid columns={[1, null, 3]} spacing={4}>
           {plans?.map((plan: { id: any; title: any; description: any; price: any; isRecommended: any; features: any[]; action: unknown }) => (
@@ -45,19 +45,16 @@ export const Pricing = (props: { [x: string]: any; children: any; plans: any; ti
               title={plan.title}
               description={plan.description}
               price={plan.price}
-              sx={
-                plan.isRecommended
-                  ? {
-                      borderColor: 'primary.500',
-                      _dark: {
-                        borderColor: 'primary.500',
-                        bg: 'blackAlpha.300',
-                      },
-                    }
-                  : {}
-              }
-            >
-              <PricingFeatures>
+              sx={plan.isRecommended
+                ? {
+                  borderColor: 'primary.500',
+                  _dark: {
+                    borderColor: 'primary.500',
+                    bg: 'blackAlpha.300',
+                  },
+                }
+                : {}} children={undefined}            >
+              <PricingFeatures children={undefined}>
                 {plan.features.map((feature: unknown, i: any) =>
                   feature ? <PricingFeature key={i} {...feature} /> : <br />
                 )}
