@@ -1,48 +1,137 @@
-import { ReactNode } from 'react'
-import Head from 'next/head'
-import { Container, Flex, HStack, VisuallyHidden } from '@chakra-ui/react'
-import { ColorModeSwitcher } from './ColorModeSwitcher'
-import { Logo } from './Logo'
+import * as React from 'react'
+import {
+  Box,
+  HStack,
+  IconButton,
+  Kbd,
+  Link,
+  Spacer,
+  Tooltip,
+  useBreakpointValue,
+} from '@chakra-ui/react'
+import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 
-import { Link } from '@saas-ui/react'
+import { useRouter } from 'next/router'
 
-type Props = {
-  children?: ReactNode
-  title?: string
+import headerNav from '../data/header-nav'
+import NavLink from '../components/nav-link'
+import { useScrollSpy } from '../hooks/use-scrollspy'
+import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
+
+import ThemeToggle from './theme-toggle'
+import { SearchInput, useHotkeys } from '@saas-ui/react'
+
+import { GlobalSearch } from '../components/global-search/global-search'
+
+const Header = () => {
+  const mobileNav = useDisclosure()
+  const isDesktop = useBreakpointValue({ xl: true })
+  const router = useRouter()
+  const activeId = useScrollSpy(
+    headerNav.filter(({ id }) => id).map(({ id }) => `[id="${id}"]`),
+    {
+      threshold: 0.75,
+    }
+  )
+
+  const mobileNavBtnRef = React.useRef<HTMLButtonElement>()
+
+  useUpdateEffect(() => {
+    mobileNavBtnRef.current?.focus()
+  }, [mobileNav.isOpen])
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
+  useHotkeys(['/', 'CMD+K'], () => {
+    onOpen()
+  })
+
+  return (
+    <HStack flex="1" ps="4">
+      <Box>
+        {isDesktop && (
+          <SearchInput
+            placeholder="Search docs..."
+            size="sm"
+            borderRadius="md"
+            onFocus={onOpen}
+            rightElement={<Kbd fontSize="md">/</Kbd>}
+          />
+        )}
+        <GlobalSearch
+          isOpen={isOpen}
+          onClose={onClose}
+          onSelect={(value) => {
+            console.log(value)
+          }}
+        />
+      </Box>
+      <HStack spacing="2" flexShrink={0} flex="1" justifyContent="flex-end">
+        {headerNav.map(({ href, id, ...props }, i) => {
+          return (
+            <NavLink
+              display={{ base: 'none', lg: 'block' }}
+              href={href || `/#${id}`}
+              key={i}
+              isActive={
+                (id && activeId === id) ||
+                (href && !!router.asPath.match(new RegExp(href)))
+              }
+              {...props}
+            />
+          )
+        })}
+
+        <Tooltip label="Feedback &amp; Roadmap">
+          <IconButton
+            variant="ghost"
+            aria-label="roadmap"
+            icon={<ProductLaneLogo boxSize="3" />}
+            borderRadius="md"
+            as={Link}
+            href="https://roadmap.saas-ui.dev"
+          />
+        </Tooltip>
+
+        <Tooltip label="Discord community">
+          <IconButton
+            variant="ghost"
+            aria-label="discord"
+            icon={<FaDiscord size="14" />}
+            borderRadius="md"
+            as={Link}
+            href="https://discord.gg/4PmJGFcAjX"
+          />
+        </Tooltip>
+
+        <Tooltip label="Twitter">
+          <IconButton
+            variant="ghost"
+            aria-label="twitter"
+            icon={<FaTwitter size="14" />}
+            borderRadius="md"
+            as={Link}
+            href="https://twitter.com/saas_js"
+          />
+        </Tooltip>
+
+        <Tooltip label="Github">
+          <IconButton
+            variant="ghost"
+            aria-label="github"
+            icon={<FaGithub size="14" />}
+            borderRadius="md"
+            as={Link}
+            href="https://github.com/saas-js/saas-ui"
+          />
+        </Tooltip>
+
+        <ThemeToggle />
+
+       
+      </HStack>
+    </HStack>
+  )
 }
 
-export const Layout = ({
-  children,
-  title = 'This is the default title',
-}: Props) => (
-  <div>
-    <Head>
-      <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <Container maxWidth="1200px">
-      <header>
-        <Flex py={4} justifyContent="space-between" alignItems="center" mb={8}>
-          <Flex justifyContent="space-between" alignItems="center">
-            <nav>
-              <HStack spacing={15}>
-                <Link
-                  href="/"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  <Logo h="1.5rem" pointerEvents="none" mr={4} />
-                  <VisuallyHidden>Saas UI Next.js starter</VisuallyHidden>
-                </Link>
-              </HStack>
-            </nav>
-          </Flex>
-          <ColorModeSwitcher justifySelf="flex-end" />
-        </Flex>
-      </header>
-      {children}
-    </Container>
-  </div>
-)
+export default Header
