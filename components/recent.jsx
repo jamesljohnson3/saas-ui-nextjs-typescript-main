@@ -1,11 +1,11 @@
-import Section 		from '../component/structure/section';
-import Container 	from '../component/structure/container';
+import Section 		from '../components/structure/section';
+import Container 	from '../components/structure/container';
 
 import Image from 'next/image'
-import SectionTitle from '../compnent/section.title.block'
+import SectionTitle from '../compnents/section.title.block'
 
 
-import css from '../../styles/sections/articles/recent.module.scss'
+import css from '../styles/sections/articles/recent.module.scss'
 
 export default function Recent({ mediumArticles }) {
 
