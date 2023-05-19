@@ -16,7 +16,6 @@ const SidebarLink = (props: SidebarLinkProps) => {
   const { asPath } = useRouter()
   const isActive = asPath === href
 
-  const isDisabled = !href
 
   let link = (
     <NavItem
