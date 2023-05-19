@@ -32,7 +32,7 @@ export const Layout = ({
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <Logo h="1.5rem" pointerEvents="none" mr={4} />
+                  <Logo/>
                   <VisuallyHidden>Saas UI Next.js starter</VisuallyHidden>
                 </Link>
               </HStack>
