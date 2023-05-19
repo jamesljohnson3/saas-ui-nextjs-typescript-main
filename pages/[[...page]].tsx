@@ -4,7 +4,6 @@ import { BuilderComponent, Builder, builder } from '@builder.io/react';
 import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import Box from './cobe';
-import { Layout } from '../components/Layout'
 
 export async function getStaticProps({ params }: GetStaticPropsContext<{ page: string[] }>) {
   const page = await builder
