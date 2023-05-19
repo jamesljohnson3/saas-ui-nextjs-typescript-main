@@ -17,7 +17,7 @@ export interface FooterProps extends BoxProps {
   columns?: number
 }
 
-export const Footer: React.FC<FooterProps> = (props: { [x: string]: any; columns?: 2 | undefined }) => {
+export const Footer= (props: { [x: string]: any; columns?: 2 | undefined }) => {
   const { columns = 2, ...rest } = props
   return (
     <Box bg="white" _dark={{ bg: 'gray.900' }} {...rest}>
@@ -32,11 +32,11 @@ export const Footer: React.FC<FooterProps> = (props: { [x: string]: any; columns
                 {siteConfig.seo.description}
               </Text>
             </Stack>
-            <Copyright>{siteConfig.footer.copyright}</Copyright>
+            <Copyright children={undefined}>{siteConfig.footer.copyright}</Copyright>
           </Stack>
           <HStack justify="flex-end" spacing="4" alignSelf="flex-end">
             {siteConfig.footer?.links?.map(({ href, label }) => (
-              <FooterLink key={href} href={href}>
+              <FooterLink key={href} href={href} children={undefined}>
                 {label}
               </FooterLink>
             ))}
@@ -52,7 +52,7 @@ export interface CopyrightProps {
   children: React.ReactNode
 }
 
-export const Copyright: React.FC<CopyrightProps> = ({
+export const Copyright = ({
   title,
   children,
 }: CopyrightProps) => {
@@ -67,7 +67,7 @@ export const Copyright: React.FC<CopyrightProps> = ({
   )
 }
 
-export const FooterLink: React.FC<LinkProps> = (props: { [x: string]: any; children: any }) => {
+export const FooterLink= (props: { [x: string]: any; children: any }) => {
   const { children, ...rest } = props
   return (
     <Link
