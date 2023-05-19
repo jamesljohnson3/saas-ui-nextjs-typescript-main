@@ -22,9 +22,8 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (
     <SaasProvider linkComponent={Link}>
          <Layout
-            announcement={pageProps.announcement}
-            header={pageProps.header}
-
+        announcement={pageProps.announcement}
+        header={pageProps.header} footer={undefined}
           >
        <LazyMotion features={domAnimation}>
       <Component {...pageProps} /></LazyMotion><Footer /></Layout>
