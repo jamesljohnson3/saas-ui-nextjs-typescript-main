@@ -88,14 +88,14 @@ export const GlobalSearch = (props: any) => {
                             {title}
                             {shortcut && (
                               <Box ms="auto">
-                                {shortcut.map((key) => {
+                                {shortcut.map((key: any) => {
                                   return <Kbd key={key}>{key}</Kbd>
                                 })}
                               </Box>
                             )}
                           </CommandBarItem>
 
-                          {routes?.map(({ title, path, action }: any, i) => {
+                          {routes?.map(({ title, path, action }: any, i: any) => {
                             return (
                               <CommandBarItem
                                 key={i}
