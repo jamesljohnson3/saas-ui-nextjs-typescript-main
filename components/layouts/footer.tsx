@@ -36,7 +36,7 @@ export const Footer= (props: { [x: string]: any; columns?: 2 | undefined }) => {
           </Stack>
           <HStack justify="flex-end" spacing="4" alignSelf="flex-end">
             {siteConfig.footer?.links?.map(({ href, label }) => (
-              <FooterLink key={href} href={href} children={undefined}>
+              <FooterLink key={href} href={href} >
                 {label}
               </FooterLink>
             ))}
