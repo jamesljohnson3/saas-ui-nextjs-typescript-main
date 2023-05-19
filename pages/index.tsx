@@ -1,5 +1,5 @@
 import { Box, Code, Text, VStack, Grid } from '@chakra-ui/react'
-import { Layout } from '../components/Layout'
+import  Layout  from '../components/Layout'
 import { Nextjs } from '../components/NextLogo'
 import { Link } from '@saas-ui/react'
 
