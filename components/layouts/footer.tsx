@@ -62,6 +62,6 @@ export interface NavProps {
   items: Array<any>
 }
 
-export const Nav = ({ title, items }: NavProps) => {}
+export const Nav = ({  }: NavProps) => {}
 
 export default Footer
