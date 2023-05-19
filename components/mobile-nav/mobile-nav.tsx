@@ -1,13 +1,7 @@
 import {
   Box,
-  BoxProps,
-  Button,
-  Center,
-  CenterProps,
   CloseButton,
   Flex,
-  Grid,
-  GridItem,
   HStack,
   IconButton,
   IconButtonProps,
@@ -17,17 +11,16 @@ import {
   useColorModeValue,
   useUpdateEffect,
 } from '@chakra-ui/react'
-import { AnimatePresence, motion, useElementScroll } from 'framer-motion'
-import useRouteChanged from 'hooks/use-route-changed'
+import { AnimatePresence, motion } from 'framer-motion'
+import useRouteChanged from '../../hooks/use-route-changed'
 // import { getRoutes } from '@/layouts/mdx'
-import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
 
-import siteConfig from 'data/config'
-import { Logo } from 'components/layout/logo'
+import siteConfig from '../../data/config'
+import Logo  from '../../components/layouts/logo'
 import { Link } from '@saas-ui/react'
 
 interface NavLinkProps extends LinkProps {
