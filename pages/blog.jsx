@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
-import Recent 		from '../../components/recent'
+import Recent 		from '../components/recent'
 
-import Color 	from '../../components/utils/page.colors.util'
+import Color 	from '../components/utils/page.colors.util'
 
 import colors 		from '../content/articles/_colors.json'
 import settings 	from '../content/_settings.json'
