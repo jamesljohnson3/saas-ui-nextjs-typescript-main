@@ -67,7 +67,6 @@ interface MobileNavContentProps {
 export function MobileNavContent(props: MobileNavContentProps) {
   const { isOpen, onClose = () => {} } = props
   const closeBtnRef = React.useRef<HTMLButtonElement>(null)
-  const { pathname } = useRouter()
   const bgColor = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')
 
   useRouteChanged(onClose)
