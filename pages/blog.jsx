@@ -14,7 +14,6 @@ import { Fragment } from "react";
 export default function Articles({ mediumArticles }) {
 	return (
 		<>
-			<div>
 			  {/* Navbar */}
 			  <header className="mx-auto max-w-6xl px-8 xl:px-0">
 				<nav className="relative relative z-20 flex shrink-0 items-center space-x-2 py-6">
@@ -1136,7 +1135,6 @@ export default function Articles({ mediumArticles }) {
 				  Follow me on Twitter
 				</a>
 			  </footer>
-			</div>
 		
 		
 			<Color colors={colors} />
