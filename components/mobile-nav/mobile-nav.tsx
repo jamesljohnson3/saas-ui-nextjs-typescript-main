@@ -13,12 +13,10 @@ import {
 } from '@chakra-ui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 import NextLink from 'next/link'
-import { useRouter } from 'next/router'
 import * as React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
 import Logo from '../../components/layouts/logo'
-import { SidebarContent } from '../sidebar/sidebar'
 
 import headerNav from '../../data/header-nav'
 
@@ -62,7 +60,6 @@ interface MobileNavContentProps {
 
 export function MobileNavContent(props: MobileNavContentProps) {
   const { isOpen } = props
-  const { pathname } = useRouter()
   const bgColor = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')
 
 
@@ -127,9 +124,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
               <ScrollView
                 
               >
-                <SidebarContent
-                  pathname={pathname}
-                />
+               Sidebar Content
               </ScrollView>
             </Flex>
           </motion.div>
