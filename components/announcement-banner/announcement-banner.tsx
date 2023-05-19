@@ -1,6 +1,5 @@
 import NextLink from 'next/link'
 import {
-  Box,
   Container,
   Flex,
   HStack,
@@ -12,7 +11,6 @@ import {
 import {
   Banner,
   BannerActions,
-  BannerContent,
   BannerDescription,
   BannerTitle,
   Button,
@@ -26,7 +24,7 @@ export interface AnnouncementBannerProps {
 }
 
 export const AnnouncementBanner: React.FC<AnnouncementBannerProps> = (
-  props
+  props: { title: any; description: any; href: any }
 ) => {
   const { title, description, href } = props
   const bg = useColorModeValue('white', 'gray.900')
