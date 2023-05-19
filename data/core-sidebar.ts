@@ -1,4 +1,4 @@
-import { RouteItem } from '@/docs/utils/get-route-context'
+import { RouteItem } from '../data/get-route-context'
 
 const sidebar = {
   routes: [

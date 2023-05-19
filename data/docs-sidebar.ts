@@ -1,8 +1,7 @@
-import { RouteItem } from '@/docs/utils/get-route-context'
+import { RouteItem } from './get-route-context'
 
 import {
   FiBox,
-  FiHelpCircle,
   FiBookOpen,
   FiCircle,
   FiClock,

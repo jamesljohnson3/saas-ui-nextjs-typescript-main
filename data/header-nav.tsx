@@ -1,4 +1,4 @@
-import { NavLinkProps } from '@/components/nav-link'
+import { NavLinkProps } from '../components/nav-link'
 import { Badge, Box, HStack, Text } from '@chakra-ui/react'
 
 const hideMobile = {
