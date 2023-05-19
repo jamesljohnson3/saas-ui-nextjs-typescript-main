@@ -37,7 +37,7 @@ const items = [
 ]
 
 
-export const GlobalSearch = (props) => {
+export const GlobalSearch = (props: any) => {
   const { onClose } = props
   const router = useRouter()
   return (
