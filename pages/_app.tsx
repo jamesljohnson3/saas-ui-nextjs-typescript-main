@@ -2,7 +2,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { LazyMotion, domAnimation } from "framer-motion";
 import { SaasProvider } from '@saas-ui/react';
 import { AppProps } from 'next/app';
-import { Footer } from '../components/layouts';
+import {Footer} from '../components/layouts/footer'
 import Link from 'next/link';
 import Layout from '../components/layouts';
 import '../styles/css/variables.css';
