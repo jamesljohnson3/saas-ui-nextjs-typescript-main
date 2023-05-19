@@ -43,7 +43,7 @@ const Logo = ({ href = '/', onClick }: LogoProps) => {
         borderRadius="sm"
         onClick={onClick}
       >
-        {logo}
+      Logo
         <VisuallyHidden>{siteConfig.seo?.title}</VisuallyHidden>
       </AccessibleLink>
     </Flex>

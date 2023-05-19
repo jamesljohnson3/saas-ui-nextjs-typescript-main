@@ -1,7 +1,6 @@
 import { ReactNode } from 'react'
 import Head from 'next/head'
 import { Container, Flex, HStack, VisuallyHidden } from '@chakra-ui/react'
-import { ColorModeSwitcher } from './ColorModeSwitcher'
 import { Logo } from './Logo'
 
 import { Link } from '@saas-ui/react'

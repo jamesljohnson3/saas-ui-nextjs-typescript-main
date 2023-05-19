@@ -17,7 +17,6 @@ import { MobileNavButton } from '../../components/mobile-nav'
 import { MobileNavContent } from '../../components/mobile-nav'
 import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
 
-import ThemeToggle from './theme-toggle'
 import { SearchInput, useHotkeys } from '@saas-ui/react'
 
 import { GlobalSearch } from '../global-search/global-search'
