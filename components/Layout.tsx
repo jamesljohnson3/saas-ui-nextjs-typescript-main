@@ -60,7 +60,7 @@ const Header = () => {
         <GlobalSearch
           isOpen={isOpen}
           onClose={onClose}
-          onSelect={(value) => {
+          onSelect={(value: any) => {
             console.log(value)
           }}
         />
