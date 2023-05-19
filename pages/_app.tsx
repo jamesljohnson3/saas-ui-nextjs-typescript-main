@@ -7,13 +7,21 @@ export interface AppRenderProps {
 import type { NextComponentType, NextPageContext } from 'next'
 import type { NextRouter } from 'next/router'
 import Link from 'next/link'
+import Layout from '../components/layouts'
+import { AppProps } from 'next/app'
+import Footer from '../components/layouts/footer'
 
 import { SaasProvider } from '@saas-ui/react'
 
-export default function App({ Component, pageProps }: AppRenderProps) {
+const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (
     <SaasProvider linkComponent={Link}>
-      <Component {...pageProps} />
+         <Layout
+        announcement={pageProps.announcement}
+        header={pageProps.header}
+        footer={pageProps.footer !== false ? <Footer /> : null} children={undefined}          >
+      <Component {...pageProps} /></Layout>
     </SaasProvider>
   )
 }
+export default MyApp
