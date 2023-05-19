@@ -117,7 +117,6 @@ const Header = () => {
         <ThemeToggle />
 
         <MobileNavButton
-          ref={mobileNavBtnRef}
           aria-label="Open Menu"
           onClick={mobileNav.onOpen}
         />
