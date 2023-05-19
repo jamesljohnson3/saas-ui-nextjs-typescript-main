@@ -9,8 +9,8 @@ import {
 } from '@chakra-ui/react'
 import { transparentize } from '@chakra-ui/theme-tools'
 import { Card, CardProps } from '@saas-ui/react'
-import { Section, SectionProps } from '../../components/section'
-import { Testimonial, Testimonials } from '../../components/testimonials'
+import { Section } from '../../components/section'
+import { Testimonial } from '../../components/testimonials'
 
 export interface HighlightBoxProps
   extends GridItemProps,
