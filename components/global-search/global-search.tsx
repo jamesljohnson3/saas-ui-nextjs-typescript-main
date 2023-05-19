@@ -37,11 +37,6 @@ const items = [
   },
 ]
 
-const SubItem = (props) => {
-  const search = useCommandState((state) => state.search)
-  if (!search) return null
-  return <CommandBarItem {...props} />
-}
 
 export const GlobalSearch = (props) => {
   const { onClose } = props
@@ -79,7 +74,7 @@ export const GlobalSearch = (props) => {
                               bg: 'transparent',
                             }}
                             borderRadius="md"
-                            onSelect={(e) => {
+                            onSelect={() => {
                               if (heading) {
                                 return
                               } else if (path) {
