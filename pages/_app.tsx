@@ -11,7 +11,12 @@ import Layout from '../components/layouts'
 import { AppProps } from 'next/app'
 import Footer from '../components/layouts/footer'
 
+import { LazyMotion, domAnimation } from "framer-motion"
+
 import { SaasProvider } from '@saas-ui/react'
+import '../styles/css/variables.css'
+import '../styles/css/global.css'
+import '../styles/css/scrollbar.css';
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (
@@ -21,7 +26,8 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
             header={pageProps.header}
 
           >
-      <Component {...pageProps} /><Footer /></Layout>
+       <LazyMotion features={domAnimation}>
+      <Component {...pageProps} /></LazyMotion><Footer /></Layout>
     </SaasProvider>
   )
 }
