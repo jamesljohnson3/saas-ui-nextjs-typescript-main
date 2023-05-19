@@ -1,7 +1,7 @@
 
 
 // Section scss
-import section from '../../styles/blocks/section.title.module.scss'
+import section from '../styles/blocks/section.title.module.scss'
 
 /**
  * Section header component
