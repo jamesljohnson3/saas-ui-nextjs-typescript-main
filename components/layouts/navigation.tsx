@@ -5,7 +5,6 @@ import {
   IconButton,
   Kbd,
   Link,
-  Spacer,
   Tooltip,
   useBreakpointValue,
 } from '@chakra-ui/react'
