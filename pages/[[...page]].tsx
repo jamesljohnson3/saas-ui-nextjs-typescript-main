@@ -68,8 +68,8 @@ export default function Page({ page }: InferGetStaticPropsType<typeof getStaticP
                name="description"
                content="Designed to help you manage the bigger picture. Unlimited Now   "
              />
-           </Head>    <Layout title="Saas UI + Next.js + TypeScript example">
-<BuilderComponent model="page" content={page} />      <Box /> </Layout>
+           </Head>  
+<BuilderComponent model="page" content={page} />      <Box />
 </>
   );
 }
