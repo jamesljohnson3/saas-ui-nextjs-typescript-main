@@ -4,12 +4,13 @@ import { SaasProvider } from '@saas-ui/react';
 import { AppProps } from 'next/app';
 import {Footer} from '../components/layouts/footer'
 import Link from 'next/link';
-import Layout from '../components/layouts';
+import Layout2 from '../components/layouts';
 import '../styles/css/variables.css';
 import '../styles/css/global.css';
 import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
+import { Layout } from '../components/Layout'
 
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
@@ -24,16 +25,17 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (
     <ChakraProvider theme={theme}>
       <SaasProvider linkComponent={Link}>
-        <Layout
+        <Layout2
           announcement={pageProps.announcement}
           header={pageProps.header}
           footer={undefined}
-        >
+        >    <Layout title="Saas UI + Next.js + TypeScript example">
+
           <LazyMotion features={domAnimation}>
             <Component {...pageProps} />
           </LazyMotion>
-          <Footer />
-        </Layout>
+          <Footer />        </Layout>
+        </Layout2>
       </SaasProvider>
     </ChakraProvider>
   );
