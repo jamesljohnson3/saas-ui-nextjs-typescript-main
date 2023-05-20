@@ -91,6 +91,7 @@ export const SignUpSignInComponent: React.FC<Props> = ({
                 src="https://qwvsfvhphdefqfyuuhlb.supabase.co/storage/v1/object/public/logos/Google%20logo.png"
                 width={20}
                 height={20}
+                alt="icon"
               />
             </Button>
             <Button
@@ -104,6 +105,8 @@ export const SignUpSignInComponent: React.FC<Props> = ({
                 src="https://qwvsfvhphdefqfyuuhlb.supabase.co/storage/v1/object/public/logos/Apple%20logo.png"
                 width={22}
                 height={22}
+                alt="icon"
+
                 resizeMode="contain"
               />
             </Button>
