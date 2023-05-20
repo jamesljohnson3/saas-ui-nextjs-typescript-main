@@ -46,6 +46,7 @@
     "@preprio/nodejs-sdk": "^1.1.1",
     "@prisma/client": "^3.3.0",
     "@reduxjs/toolkit": "^1.8.3",
+    "@saas-ui/clerk": "^2.0.2",
     "@saas-ui/command-bar": "^0.1.2",
     "@saas-ui/react": "1.6.1",
     "@svgr/webpack": "^6.5.1",
@@ -171,6 +172,9 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.3",
     "@trivago/prettier-plugin-sort-imports": "^2.0.2",
     "@types/cors": "^2.8.13",
     "@types/glidejs__glide": "^3.4.2",
@@ -206,12 +210,10 @@
     "prisma": "^3.3.0",
     "rimraf": "^3.0.2",
     "sass": "^1.57.1",
-    "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/line-clamp": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.3",
     "tailwind-children": "^0.5.0",
     "tailwind-saasblocks": "^0.2.0",
-    "tailwindcss": "^3.1.5",    "typescript": "4.7.3",
+    "tailwindcss": "^3.1.5",
+    "typescript": "4.7.3",
     "vite": "^3.0.2"
   }
 }
