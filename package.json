@@ -46,6 +46,7 @@
     "@preprio/nodejs-sdk": "^1.1.1",
     "@prisma/client": "^3.3.0",
     "@reduxjs/toolkit": "^1.8.3",
+    "@saas-ui/app-shell": "^1.1.2",
     "@saas-ui/clerk": "^2.0.2",
     "@saas-ui/command-bar": "^0.1.2",
     "@saas-ui/react": "1.6.1",

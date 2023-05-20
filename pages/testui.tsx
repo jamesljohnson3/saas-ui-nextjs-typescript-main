@@ -1,5 +1,10 @@
-import { AppShell, Sidebar, SidebarSection, NavItem } from '@saas-ui/app-shell'
-import { Box } from '@chakra-ui/react'
+import { AppShell } from '@saas-ui/app-shell'
+import {
+    Sidebar,
+    SidebarSection,
+    NavItem,
+  } from '@saas-ui/sidebar'
+  import { Box } from '@chakra-ui/react'
 export default function Home() {
 
 
