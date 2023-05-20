@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 
 import Recent 		from '../components/recent'
-import '../styles/css/global.css';
 
 import Color 	from '../components/utils/page.colors.util'
 
