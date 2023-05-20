@@ -1,10 +1,4 @@
-import { AppShell } from '@saas-ui/app-shell'
-import {
-    Sidebar,
-    SidebarSection,
-    NavItem,
-  } from '@saas-ui/sidebar'
-  import { Box, Text,  SimpleGrid,
+  import { Text,
   } from '@chakra-ui/react'
 
   import {
@@ -23,23 +17,7 @@ export default function Home() {
 
   return (
     <>
-     <AppShell
-  navbar={
-    <Box as="header" borderBottomWidth="1px" py="2" px="4">
-Logo    </Box>
-  }
-  sidebar={
-    <Sidebar>
-      <SidebarSection>
-        <NavItem>Home</NavItem>
-        <NavItem>Settings</NavItem>
-      </SidebarSection>
-    </Sidebar>
-  }
->
-  <Box as="main" flex="1" py="2" px="4" overflowY="auto">
-  <SimpleGrid columns={[1, null, 2]} gap="2">
-  <Card variant="outline">
+    <Card variant="outline">
     <CardHeader>
 
 Logo      <CardTitle>Github</CardTitle>
@@ -76,8 +54,6 @@ Logo      <CardTitle>Slack</CardTitle>
       </Button>
     </CardFooter>
   </Card>
-</SimpleGrid>  </Box>
-</AppShell>
     </>
   );
 }
