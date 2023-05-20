@@ -9,14 +9,15 @@ const headerNav: NavLinkProps[] = [
   { id: 'features', label: 'Features', ...hideMobile },
  
   {
-    href: '/blog',
+    href: '/pricing',
     label: 'Pricing',
     ...hideMobile,
   },
-  { href: 'https://workspace.unlimitpotential.com/', label: 'Sign in', ...hideMobile },
-  { href: 'https://developers.unlimitednow.me/', label: 'Documentation', ...hideMobile },
+  { href: '#', label: 'Have an Account Already?', ...hideMobile },
+  { href: 'https://workspace.unlimitpotential.com/', label: 'Access Now', ...hideMobile },
+  { href: '/docs', label: 'Documentation', ...hideMobile },
   {
-    href: '/demo',
+    href: '/signup',
     label: 'Receive Demo',
     variant: 'solid',
     colorScheme: 'primary',
