@@ -16,7 +16,7 @@ const headerNav: NavLinkProps[] = [
   { href: '/docs', label: 'Documentation', ...hideMobile },
   {
     href: '/signup',
-    label: 'demo',
+    label: 'Receive Demo',
     variant: 'solid',
     colorScheme: 'primary',
     fontSize: 'sm',
