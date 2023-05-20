@@ -25,67 +25,7 @@ const IndexPage = () => {
           <VStack spacing={8}>
             <Nextjs h="16" pointerEvents="none" />
 
-    <StepForm
-      defaultValues={{
-        name: '',
-        email: '',
-        password: '',
-      }}
-      onSubmit={onSubmit}
-    >
-      <FormLayout>
-        <FormStepper orientation="vertical">
-          <FormStep
-            name="project"
-            title="Project details"
-          >
-            <FormLayout>
-              <Field name="name" isRequired label="Name" />
-              <Field name="description" label="Description" />
-              <NextButton />
-            </FormLayout>
-          </FormStep>
-          <FormStep
-            name="members"
-            title="Invite your team"
-          >
-            <FormLayout>
-              <Field
-                name="members"
-                type="textarea"
-                label="Invite people"
-                placeholder="hello@saas-ui.dev, etc"
-                autoFocus
-              />
-              <ButtonGroup>
-                <NextButton />
-                <PrevButton variant="ghost" />
-              </ButtonGroup>
-            </FormLayout>
-          </FormStep>
-          <FormStep name="confirm" title="Confirm">
-            <FormLayout>
-              <Text>Please confirm that your information is correct.</Text>
-              <PropertyList>
-                <Property label="Name" value={<FormValue name="name" />} />
-                <Property
-                  label="Description"
-                  value={<FormValue name="description" />}
-                />
-              </PropertyList>
-              <ButtonGroup>
-                <NextButton />
-                <PrevButton variant="ghost" />
-              </ButtonGroup>
-            </FormLayout>
-          </FormStep>
-
-          <StepperCompleted>
-            <Loader>We are setting up your project, just a moment...</Loader>
-          </StepperCompleted>
-        </FormStepper>
-      </FormLayout>
-    </StepForm>
+  
             <Link
               color="purple.500"
               fontSize="xl"
