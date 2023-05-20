@@ -5,12 +5,6 @@ import { Link} from '@saas-ui/react'
 
 import React from 'react'
 
-const onSubmit = (params: any) => {
-  console.log(params)
-  return new Promise((resolve) => {
-    setTimeout(resolve, 1000)
-  })
-}
 const IndexPage = () => {
   return (
     <Layout title="Saas UI + Next.js + TypeScript example">
