@@ -9,7 +9,6 @@ import '../styles/css/variables.css';
 import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
-import { ClerkProvider } from '@clerk/nextjs'
 import { AuthProvider } from '@saas-ui/react'
 import { ClerkAuthProvider } from '@saas-ui/clerk'
 
@@ -25,7 +24,7 @@ const theme = extendTheme({
 });
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
-  return (  <ClerkProvider>  <ClerkAuthProvider
+  return (   <ClerkAuthProvider
     frontendApi={frontendApi}
   >
     {({ authService }) => (
@@ -52,8 +51,7 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
     </ChakraProvider>  </AuthProvider>
         </SaasProvider>
       )}
-    </ClerkAuthProvider></ClerkProvider>
-
+    </ClerkAuthProvider>
   );
 };
 
