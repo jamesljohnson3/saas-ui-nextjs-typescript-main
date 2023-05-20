@@ -10,6 +10,7 @@ import {
     FormValue,
     Loader,
     Property,
+    Text,
     PropertyList,
     StepperCompleted,
   } from '@saas-ui/react' 
