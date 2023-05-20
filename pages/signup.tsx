@@ -1,26 +1,14 @@
 import { NextPage } from 'next'
 import NextLink from 'next/link'
 import { Box, Center, Stack, Text } from '@chakra-ui/react'
-import { Auth, Link } from '@saas-ui/react'
+import { Link } from '@saas-ui/react'
 import { Features } from '../components/features'
 import { BackgroundGradient } from '../components/gradients/background-gradient'
 import { Section } from '../components/section'
 import siteConfig from '../data/config'
 
-import { FaGithub, FaGoogle } from 'react-icons/fa'
 import { PageTransition } from '../components/motion/page-transition'
 
-const providers = {
-  google: {
-    name: 'Google',
-    icon: FaGoogle,
-  },
-  github: {
-    name: 'Github',
-    icon: FaGithub,
-    variant: 'solid',
-  },
-}
 
 const Login: NextPage = () => {
   return (
@@ -70,12 +58,7 @@ const Login: NextPage = () => {
           </Box>
           <Center height="100%" flex="1">
             <Box width="container.sm" pt="8" px="8">
-              <Auth
-                view="signup"
-                title={siteConfig.signup.title}
-                providers={providers}
-                loginLink={<Link href="/login">Log in</Link>}
-              >
+             
                 <Text color="muted" fontSize="sm">
                   By signing up you agree to our{' '}
                   <Link href={siteConfig.termsUrl} color="white">
@@ -86,7 +69,7 @@ const Login: NextPage = () => {
                     Privacy Policy
                   </Link>
                 </Text>
-              </Auth>
+      
             </Box>
           </Center>
         </Stack>
