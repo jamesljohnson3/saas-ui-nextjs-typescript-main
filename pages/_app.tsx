@@ -11,6 +11,7 @@ import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
 import { AuthProvider } from '@saas-ui/react'
+import { ClerkProvider } from '@clerk/nextjs'
 
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
@@ -22,7 +23,8 @@ const theme = extendTheme({
 });
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
-  return (
+  return (    <ClerkProvider>
+
     <ChakraProvider theme={theme}>
            
 
@@ -40,7 +42,8 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
         </Layout2>      </AuthProvider>
 
       </SaasProvider>
-    </ChakraProvider>
+    </ChakraProvider>    </ClerkProvider>
+
   );
 };
 
