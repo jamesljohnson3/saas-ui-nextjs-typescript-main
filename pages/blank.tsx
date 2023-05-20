@@ -1,14 +1,8 @@
-import { Box, Text, VStack, Grid, ButtonGroup } from '@chakra-ui/react'
+import { Box, VStack, Grid, ButtonGroup } from '@chakra-ui/react'
 import { Layout } from '../components/Layout'
 import { Nextjs } from '../components/NextLogo'
-import { Field, FormLayout, FormValue, Link, Loader, Property, PropertyList, StepperCompleted } from '@saas-ui/react'
-import {
-  StepForm,
-  FormStepper,
-  FormStep,
-  PrevButton,
-  NextButton,
-} from '@saas-ui/react'
+import { Link} from '@saas-ui/react'
+
 import React from 'react'
 
 const onSubmit = (params: any) => {
