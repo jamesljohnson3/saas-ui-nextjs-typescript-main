@@ -7,6 +7,7 @@ import {
 } from '@chakra-ui/react'
 import AccessibleLink from '../../components/link'
 import React from 'react'
+import Image from 'next/image';
 
 export interface LogoProps {
   href?: string
@@ -43,8 +44,12 @@ const Logo = ({ href = '/', onClick }: LogoProps) => {
         borderRadius="sm"
         onClick={onClick}
       >
-      Logo
-        <VisuallyHidden>{siteConfig.seo?.title}</VisuallyHidden>
+ <Image
+        src="https://res.cloudinary.com/unlimitpotential/image/upload/v1684541520/Screen_Shot_2023-05-19_at_8.09.24_PM_lhtctr.png"
+        alt="Logo"
+        layout="fixed"
+        height={75}
+      />        <VisuallyHidden>{siteConfig.seo?.title}</VisuallyHidden>
       </AccessibleLink>
     </Flex>
   )
