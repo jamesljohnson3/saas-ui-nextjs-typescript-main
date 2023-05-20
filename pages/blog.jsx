@@ -195,8 +195,8 @@ export default function Articles({ mediumArticles }) {
 						  <input
 							id="email"
 							name="email"
-							type="email"
-							placeholder="Email"
+							type="text"
+							placeholder="website url"
 							className="block w-72 w-full rounded-xl border-2 border-layer-3 bg-muted-1 px-4 py-2.5 font-semibold text-heading placeholder:text-text/50 focus:border-primary focus:outline-none focus:ring-0 sm:text-sm"
 						  />
 						</div>
