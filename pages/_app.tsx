@@ -7,8 +7,6 @@ import Link from 'next/link';
 import Layout2 from '../components/layouts';
 import "../styles/globals.css";
 
-import '../styles/css/variables.css';
-import '../styles/css/scrollbar.css';
 import { builder } from '@builder.io/react';
 import { AuthProvider } from '@saas-ui/react'
 import { ClerkProvider } from '@clerk/nextjs'
