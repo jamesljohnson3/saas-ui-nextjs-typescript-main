@@ -7,20 +7,8 @@ import { BackgroundGradient } from '../components/gradients/background-gradient'
 import { Section } from '../components/section'
 import siteConfig from '../data/config'
 
-import { FaGithub, FaGoogle } from 'react-icons/fa'
 import { PageTransition } from '../components/motion/page-transition'
 
-const providers = {
-  google: {
-    name: 'Google',
-    icon: FaGoogle,
-  },
-  github: {
-    name: 'Github',
-    icon: FaGithub,
-    variant: 'solid',
-  },
-}
 
 const Login: NextPage = () => {
   return (
@@ -73,7 +61,6 @@ const Login: NextPage = () => {
               <Auth
                 view="signup"
                 title={siteConfig.signup.title}
-                providers={providers}
                 loginLink={<Link href="/login">Log in</Link>}
               >
                 <Text color="muted" fontSize="sm">
