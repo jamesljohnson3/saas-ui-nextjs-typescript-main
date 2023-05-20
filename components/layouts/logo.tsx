@@ -47,7 +47,7 @@ const Logo = ({ href = '/', onClick }: LogoProps) => {
  <Image
         src="https://res.cloudinary.com/unlimitpotential/image/upload/v1684541520/Screen_Shot_2023-05-19_at_8.09.24_PM_lhtctr.png"
         alt="Logo"
-        width={75}
+        width={110}
       />        <VisuallyHidden>{siteConfig.seo?.title}</VisuallyHidden>
       </AccessibleLink>
     </Flex>
