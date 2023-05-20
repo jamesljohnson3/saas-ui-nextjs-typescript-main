@@ -25,7 +25,13 @@ const theme = extendTheme({
 });
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
-  return (    <ClerkProvider>
+  return (    <ClerkAuthProvider
+    frontendApi={frontendApi}
+    publishableKey={process.env.CLERK_PUBLISABLE_KEY}
+  >
+    {({ authService }) => (
+      <SaasProvider>
+        <AuthProvider {...authService}>
 
     <ChakraProvider theme={theme}>
            
@@ -44,7 +50,10 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
         </Layout2>      </AuthProvider>
 
       </SaasProvider>
-    </ChakraProvider>    </ClerkProvider>
+    </ChakraProvider>  </AuthProvider>
+        </SaasProvider>
+      )}
+    </ClerkAuthProvider>
 
   );
 };
