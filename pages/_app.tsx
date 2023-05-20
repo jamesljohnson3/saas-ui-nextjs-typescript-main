@@ -10,6 +10,7 @@ import '../styles/css/global.css';
 import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
+import { AuthProvider } from '@saas-ui/react'
 
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
@@ -23,7 +24,9 @@ const theme = extendTheme({
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (
     <ChakraProvider theme={theme}>
-      <SaasProvider linkComponent={Link}>
+           
+
+      <SaasProvider linkComponent={Link}> <AuthProvider>
         <Layout2
           announcement={pageProps.announcement}
           header={pageProps.header}
@@ -34,7 +37,8 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
             <Component {...pageProps} />
           </LazyMotion>
           <Footer />      
-        </Layout2>
+        </Layout2>      </AuthProvider>
+
       </SaasProvider>
     </ChakraProvider>
   );
