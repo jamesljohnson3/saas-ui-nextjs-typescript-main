@@ -36,7 +36,7 @@ const Logo = ({ href = '/', onClick }: LogoProps) => {
   }
 
   return (
-    <Flex  flexShrink="0" alignItems="flex-start">
+    <Flex h="-8" flexShrink="0" alignItems="flex-start">
       <AccessibleLink
         href={href}
         display="flex"
