@@ -34,7 +34,7 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
     <ChakraProvider theme={theme}>
            
 
-      <SaasProvider linkComponent={Link}> <AuthProvider>
+      <SaasProvider linkComponent={Link}> 
         <Layout2
           announcement={pageProps.announcement}
           header={pageProps.header}
@@ -45,7 +45,7 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
             <Component {...pageProps} />
           </LazyMotion>
           <Footer />      
-        </Layout2>      </AuthProvider>
+        </Layout2>    
 
       </SaasProvider>
     </ChakraProvider>  </AuthProvider>
