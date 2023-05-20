@@ -11,6 +11,7 @@ import {
 } from '@saas-ui/react'
 import React from 'react'
 import { yupResolver } from '@hookform/resolvers/yup';
+import * as Yup from 'yup';
 
 const schemas = {
   project: Yup.object().shape({
