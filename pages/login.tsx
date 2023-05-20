@@ -105,7 +105,6 @@ export const SignUpSignInComponent: React.FC<Props> = ({
                 src="https://qwvsfvhphdefqfyuuhlb.supabase.co/storage/v1/object/public/logos/Apple%20logo.png"
                 width={22}
                 height={22}
-                resizeMode="contain"
                 alt="icon"
 
               />
