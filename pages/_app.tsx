@@ -25,7 +25,7 @@ const theme = extendTheme({
 });
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
-  return (    <ClerkAuthProvider
+  return (  <ClerkProvider>  <ClerkAuthProvider
     frontendApi={frontendApi}
     publishableKey={process.env.CLERK_PUBLISABLE_KEY}
   >
@@ -53,7 +53,7 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
     </ChakraProvider>  </AuthProvider>
         </SaasProvider>
       )}
-    </ClerkAuthProvider>
+    </ClerkAuthProvider></ClerkProvider>
 
   );
 };
