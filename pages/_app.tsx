@@ -27,7 +27,6 @@ const theme = extendTheme({
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (  <ClerkProvider>  <ClerkAuthProvider
     frontendApi={frontendApi}
-    publishableKey={process.env.CLERK_PUBLISABLE_KEY}
   >
     {({ authService }) => (
       <SaasProvider>
