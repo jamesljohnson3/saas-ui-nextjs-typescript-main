@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 
 import Recent 		from '../components/recent'
+import './blog.modules.css';
 
 import Color 	from '../components/utils/page.colors.util'
 
