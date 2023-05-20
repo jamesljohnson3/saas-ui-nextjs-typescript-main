@@ -10,18 +10,6 @@ import {
   NextButton,
 } from '@saas-ui/react'
 import React from 'react'
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as Yup from 'yup';
-
-const schemas = {
-  project: Yup.object().shape({
-    name: Yup.string().required().label('Name'),
-    description: Yup.string().label('Description'),
-  }),
-  members: Yup.object().shape({
-    members: Yup.string().label('Members'),
-  }),
-}
 
 const onSubmit = (params: any) => {
   console.log(params)
@@ -50,7 +38,6 @@ const IndexPage = () => {
           <FormStep
             name="project"
             title="Project details"
-            resolver={yupResolver(schemas.project)}
           >
             <FormLayout>
               <Field name="name" isRequired label="Name" />
@@ -61,7 +48,6 @@ const IndexPage = () => {
           <FormStep
             name="members"
             title="Invite your team"
-            resolver={yupResolver(schemas.members)}
           >
             <FormLayout>
               <Field
