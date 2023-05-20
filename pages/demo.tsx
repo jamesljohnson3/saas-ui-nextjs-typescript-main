@@ -1,7 +1,6 @@
 import { NextPage } from 'next'
 import NextLink from 'next/link'
-import { Box, Center, Stack, Text } from '@chakra-ui/react'
-import {  Link } from '@saas-ui/react'
+import { Box, Center, Stack } from '@chakra-ui/react'
 import { BackgroundGradient } from '../components/gradients/background-gradient'
 import { Section } from '../components/section'
 import siteConfig from '../data/config'
