@@ -1,4 +1,4 @@
-import { chakra, ChakraProps, HTMLChakraProps } from '@chakra-ui/react'
+import { chakra, ChakraProps } from '@chakra-ui/react'
 import { motion, HTMLMotionProps } from 'framer-motion'
 
 export interface MotionBoxProps
