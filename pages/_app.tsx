@@ -10,7 +10,6 @@ import '../styles/css/global.css';
 import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
-import { Layout } from '../components/Layout'
 
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
