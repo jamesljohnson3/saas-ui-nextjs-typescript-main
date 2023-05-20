@@ -26,7 +26,7 @@ import * as Yup from 'yup';
         }),
       }
     
-      const onSubmit = (params) => {
+      const onSubmit = (params: any) => {
         console.log(params)
         return new Promise((resolve) => {
           setTimeout(resolve, 1000)
