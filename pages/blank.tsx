@@ -10,7 +10,7 @@ import {
 import React from 'react'
 
 const IndexPage = () => {
-  const onSubmit = (params) => {
+  const onSubmit = (params: any) => {
     console.log(params)
     return new Promise((resolve) => {
       setTimeout(resolve, 1000)
