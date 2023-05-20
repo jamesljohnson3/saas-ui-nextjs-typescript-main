@@ -39,7 +39,7 @@ const Logo = ({ href = '/', onClick }: LogoProps) => {
     <Flex h="8" flexShrink="0" alignItems="center" justifyContent="center">
       <AccessibleLink href={href} display="flex" p="1" borderRadius="sm" onClick={onClick}>
         <Image
-          src="https://res.cloudinary.com/unlimitpotential/image/upload/v1684541520/Screen_Shot_2023-05-19_at_8.09.24_PM_lhtctr.png"
+          src="https://res.cloudinary.com/unlimitpotential/image/upload/v1684544519/now_logo_v6l0xp.png"
           alt="Logo"
           width={110}
           height={110} // Adjust the height if needed
