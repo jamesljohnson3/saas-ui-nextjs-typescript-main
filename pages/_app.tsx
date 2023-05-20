@@ -9,9 +9,12 @@ import '../styles/css/variables.css';
 import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
-import { AuthProvider } from '@saas-ui/react'
 import { ClerkProvider } from '@clerk/nextjs'
+import { AuthProvider } from '@saas-ui/react'
+import { ClerkAuthProvider } from '@saas-ui/clerk'
 
+
+const frontendApi = 'clerk.vital.gecko-33.lcl.dev'
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
 const theme = extendTheme({
