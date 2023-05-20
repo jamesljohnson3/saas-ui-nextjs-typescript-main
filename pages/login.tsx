@@ -107,7 +107,6 @@ export const SignUpSignInComponent: React.FC<Props> = ({
                 height={22}
                 alt="icon"
 
-                resizeMode="contain"
               />
             </Button>
           </div>
