@@ -49,6 +49,7 @@
     "@saas-ui/clerk": "^2.0.2",
     "@saas-ui/command-bar": "^0.1.2",
     "@saas-ui/react": "1.6.1",
+    "@saas-ui/theme-glass": "^0.3.3",
     "@svgr/webpack": "^6.5.1",
     "@swc-node/jest": "^1.6.3",
     "@swc/core": "^1.3.46",

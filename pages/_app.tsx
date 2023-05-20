@@ -11,6 +11,7 @@ import "../styles/globals.css";
 import { builder } from '@builder.io/react';
 import { AuthProvider } from '@saas-ui/react'
 import { ClerkAuthProvider } from '@saas-ui/clerk'
+import { theme as baseTheme } from '@saas-ui/theme-glass'
 
 
 const frontendApi = 'clerk.vital.gecko-33.lcl.dev'
@@ -21,7 +22,9 @@ const theme = extendTheme({
     initialColorMode: "light",
     useSystemColorMode: false,
   },
-});
+},
+baseTheme
+);
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
   return (   <ClerkAuthProvider
