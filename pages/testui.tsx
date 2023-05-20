@@ -10,10 +10,11 @@ import {
     FormValue,
     Loader,
     Property,
-    Text,
     PropertyList,
     StepperCompleted,
   } from '@saas-ui/react' 
+  import {Text } from '@chakra-ui/react'
+
   import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
   export default function BasicStepForm() {
