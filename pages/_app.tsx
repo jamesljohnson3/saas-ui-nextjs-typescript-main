@@ -29,12 +29,12 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
           announcement={pageProps.announcement}
           header={pageProps.header}
           footer={undefined}
-        >    <Layout title="Saas UI + Next.js + TypeScript example">
+        >   
 
           <LazyMotion features={domAnimation}>
             <Component {...pageProps} />
           </LazyMotion>
-          <Footer />        </Layout>
+          <Footer />      
         </Layout2>
       </SaasProvider>
     </ChakraProvider>
