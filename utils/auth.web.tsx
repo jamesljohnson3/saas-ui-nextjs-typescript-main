@@ -38,7 +38,7 @@ export const handleOAuthSignUp = async (
 
 export const handleOAuthSignIn = async (
   strategy: OAuthStrategy,
-  setSession: SetSession,
+  _setSession: SetSession,
   signIn: SignInResource
 ) => {
   try {
