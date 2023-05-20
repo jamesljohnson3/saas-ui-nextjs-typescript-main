@@ -10,6 +10,7 @@ import '../styles/css/global.css';
 import '../styles/css/scrollbar.css';
 import "../styles/globals.css";
 import { builder } from '@builder.io/react';
+import { Layout } from '../components/Layout'
 
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
@@ -28,12 +29,12 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
           announcement={pageProps.announcement}
           header={pageProps.header}
           footer={undefined}
-        >  
+        >    <Layout title="Saas UI + Next.js + TypeScript example">
 
           <LazyMotion features={domAnimation}>
             <Component {...pageProps} />
           </LazyMotion>
-          <Footer />     
+          <Footer />        </Layout>
         </Layout2>
       </SaasProvider>
     </ChakraProvider>
