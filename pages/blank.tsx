@@ -23,7 +23,7 @@ const schemas = {
   }),
 }
 
-const onSubmit = (params) => {
+const onSubmit = (params: any) => {
   console.log(params)
   return new Promise((resolve) => {
     setTimeout(resolve, 1000)
