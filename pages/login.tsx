@@ -115,3 +115,4 @@ export const SignUpSignInComponent: React.FC<Props> = ({
     </Section>
   )
 }
+export default SignUpSignInComponent;
