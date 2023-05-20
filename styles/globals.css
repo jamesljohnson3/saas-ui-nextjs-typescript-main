@@ -5,6 +5,8 @@
 @layer base {
   .bg-dark {
     /* Define your styles for the bg-dark class here */
+  },  .font-body {
+    /* Define your styles for the font-body class here */
   }
 }
 
