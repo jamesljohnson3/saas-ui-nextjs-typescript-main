@@ -81,7 +81,7 @@ export default function Page({ page }: InferGetStaticPropsType<typeof getStaticP
               repellendus etur quidem assumenda.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
+              <h4 className="flex-none text-sm font-semibold leading-6 text-purple-950">What’s included</h4>
               <div className="h-px flex-auto bg-gray-100" />
             </div>
             <ul
@@ -105,7 +105,7 @@ export default function Page({ page }: InferGetStaticPropsType<typeof getStaticP
                 </p>
                 <a
                   href="https://connect.unlimitpotential.com/upgrade"
-                  className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="mt-10 block w-full rounded-md bg-purple-950 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get access
                 </a>
