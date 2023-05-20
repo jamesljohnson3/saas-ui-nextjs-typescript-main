@@ -4,7 +4,12 @@ import { BuilderComponent, Builder, builder } from '@builder.io/react';
 import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import Box from './cobe';
-
+const includedFeatures = [
+  'Private forum access',
+  'Member resources',
+  'Entry to annual conference',
+  'Official member t-shirt',
+]
 export async function getStaticProps({ params }: GetStaticPropsContext<{ page: string[] }>) {
   const page = await builder
     .get('page', {
