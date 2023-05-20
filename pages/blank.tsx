@@ -1,4 +1,4 @@
-import { Box, Code, Text, VStack, Grid, ButtonGroup } from '@chakra-ui/react'
+import { Box, Text, VStack, Grid, ButtonGroup } from '@chakra-ui/react'
 import { Layout } from '../components/Layout'
 import { Nextjs } from '../components/NextLogo'
 import { Field, FormLayout, FormValue, Link, Loader, Property, PropertyList, StepperCompleted } from '@saas-ui/react'
