@@ -20,7 +20,6 @@
     "@chakra-ui/system": "^2.5.5",
     "@chakra-ui/theme-tools": "^2.0.12",
     "@changesets/cli": "^2.25.2",
-    "@clerk/clerk-react": "^3.5.1",
     "@clerk/nextjs": "^4.11.11",
     "@clerk/types": "^3.38.1",
     "@descope/node-sdk": "^1.0.4-alpha.7",
