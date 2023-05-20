@@ -1,10 +1,8 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-
 const eggshellDelightsTheme = require("tailwind-saasblocks/themes/eggshell-delights.theme");
-const midnightEnvyTheme = require("tailwind-saasblocks/themes/midnight-envy.theme");
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  // ...
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -13,6 +11,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      backgroundColor: {
+        body: "your-color-value",
       },
     },
   },
@@ -23,8 +24,15 @@ module.exports = {
     require("tailwind-children"),
     require("tailwind-saasblocks")({
       themes: {
-        light: eggshellDelightsTheme
+        light: eggshellDelightsTheme,
       },
     }),
+    function ({ addVariant, e }) {
+      addVariant("responsive", ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.container .${e(`responsive${separator}${className}`)}`;
+        });
+      });
+    },
   ],
 };
