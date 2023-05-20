@@ -52,3 +52,5 @@ export const handleOAuthSignIn = async (
     console.log("error signing in with oauth on web", err);
   }
 };
+export { OAuthStrategy };
+
