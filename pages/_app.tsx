@@ -15,7 +15,7 @@ import { theme as baseTheme } from '@saas-ui/theme-glass'
 import { NextSeo } from 'next-seo';
 
 
-const frontendApi = 'clerk.vital.gecko-33.lcl.dev'
+const frontendApi = 'clerk.unlimitpotential.com'
 builder.init('a480daf8d0e34c12bcc3f48f0079ed71');
 
 const theme = extendTheme({
