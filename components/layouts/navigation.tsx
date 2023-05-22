@@ -79,7 +79,7 @@ const Header = () => {
             icon={<FaDiscord size="14" />}
             borderRadius="md"
             as={Link}
-            href="https://discord.gg/4PmJGFcAjX"
+            href="#"
           />
         </Tooltip>
 
@@ -90,7 +90,7 @@ const Header = () => {
             icon={<FaTwitter size="14" />}
             borderRadius="md"
             as={Link}
-            href="https://twitter.com/saas_js"
+            href="#"
           />
         </Tooltip>
 
@@ -101,7 +101,7 @@ const Header = () => {
             icon={<FaGithub size="14" />}
             borderRadius="md"
             as={Link}
-            href="https://github.com/saas-js/saas-ui"
+            href="#"
           />
         </Tooltip>
 

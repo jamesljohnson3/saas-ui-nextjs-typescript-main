@@ -16,7 +16,7 @@ const headerNav: NavLinkProps[] = [
   { href: 'https://developers.unlimitednow.me/', label: 'Documentation', ...hideMobile },
   {
     href: '/demo',
-    label: 'Receive Demo',
+    label: 'Demo',
     variant: 'solid',
     colorScheme: 'primary',
     fontSize: 'sm',
