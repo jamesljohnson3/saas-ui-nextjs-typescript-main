@@ -12,7 +12,7 @@ const headerNav: NavLinkProps[] = [
     label: 'Pricing',
     ...hideMobile,
   },
-  { href: 'https://workspace.unlimitpotential.com/', label: 'Sign in', ...hideMobile },
+  { href: 'https://workspace.unlimitpotential.com/sign-in', label: 'Sign in', ...hideMobile },
   { href: 'https://developers.unlimitednow.me/', label: 'Documentation', ...hideMobile },
   {
     href: '/demo',
