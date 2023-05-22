@@ -70,13 +70,13 @@ const Login: NextPage = () => {
                   />
                 </div>
                 <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                  <div className="text-base font-medium text-gray-900">Judith Black</div>
+                  <div className="text-base font-medium text-gray-900">Unlimit Potential Creators</div>
 
                   <svg className="hidden md:block mx-1 h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M11 0h3L9 20H6l5-20z" />
                   </svg>
 
-                  <div className="text-base font-medium text-gray-500">CEO, Workcation</div>
+                  <div className="text-base font-medium text-gray-500">Learn more</div>
                 </div>
               </div>
             </footer>
