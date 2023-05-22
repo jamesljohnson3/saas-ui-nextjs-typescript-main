@@ -8,6 +8,8 @@ export default class MyDocument extends Document {
         <body className="dark bg-layer-1 text-text antialiased">
           <Main />
           <NextScript />
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
+
           <svg width="0" height="0">
             <defs>
               <LinearGradient name="peach" />
