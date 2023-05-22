@@ -46,15 +46,15 @@ const siteConfig = {
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: '/contact',
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
+        href: '#',
         label: <FaTwitter size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: '#',
         label: <FaGithub size="14" />,
       },
     ],
