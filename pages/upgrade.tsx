@@ -46,7 +46,7 @@ const callsToAction = [
     href: 'https://feed.unlimitpotential.com/upgrade',
   },
 ];
-export default function MyComponent(props: any) {
+export default function MyComponent() {
   return (
     <>
       <nav className="nav">
