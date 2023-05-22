@@ -44,7 +44,7 @@ export const GlobalSearch = (props: any) => {
     <CommandBar {...props}>
       <CommandBarDialog>
         <CommandBarContent>
-          <CommandBarInput placeholder="Search docs..." autoFocus />
+          <CommandBarInput placeholder="Search" autoFocus />
 
           <CommandBarList px="2">
             <CommandBarEmpty>No results found.</CommandBarEmpty>
