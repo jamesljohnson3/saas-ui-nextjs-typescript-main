@@ -1,23 +1,8 @@
 import { NextPage } from 'next'
-import NextLink from 'next/link'
-import { Box, Center, Stack } from '@chakra-ui/react'
 import { BackgroundGradient } from '../components/gradients/background-gradient'
 import { Section } from '../components/section'
-import siteConfig from '../data/config'
 
 import { PageTransition } from '../components/motion/page-transition'
-const people = [
-  {
-    name: 'Lindsay Walton',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80',
-  },
-  // More people...
-]
-const activityItems = [
-  { id: 1, person: people[0], project: 'Workcation', commit: '2d89f0c8', environment: 'production', time: '1h' },
-  // More items...
-]
 
 const Login: NextPage = () => {
   return (
