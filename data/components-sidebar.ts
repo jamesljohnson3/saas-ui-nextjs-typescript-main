@@ -4,7 +4,7 @@ const sidebar = {
   routes: [
     {
       title: 'Overview',
-      path: '/docs/components',
+      path: 'https://developers.unlimitednow.me/',
     
     },
   ] as RouteItem[],
