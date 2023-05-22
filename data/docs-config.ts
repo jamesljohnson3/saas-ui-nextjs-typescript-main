@@ -1,4 +1,4 @@
-const baseUrl = 'https://github.com/saas-js/saas-ui'
+const baseUrl = 'https://github.com/unlimitpotential'
 
 const docsConfig = {
   repo: {
