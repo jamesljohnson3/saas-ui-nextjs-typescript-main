@@ -30,7 +30,7 @@ const Login: NextPage = () => {
           role="img"
           aria-labelledby="svg-workcation"
         >
-          <title id="svg-workcation">Workcation</title>
+          <title id="svg-workcation">Request a free demo</title>
           <defs>
             <pattern
               id="ad119f34-7694-4c31-947f-5c9d249b21f3"
@@ -49,8 +49,8 @@ const Login: NextPage = () => {
         <div className="relative">
           <img
             className="mx-auto h-8"
-            src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
-            alt="Workcation"
+            src="https://res.cloudinary.com/unlimitpotential/image/upload/v1684563172/now_logo-removebg-preview_vcu827.png"
+            alt="unlimitednow"
           />
           <blockquote className="mt-10">
             <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
