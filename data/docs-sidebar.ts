@@ -8,26 +8,23 @@ import {
 const sidebar = {
   routes: [
     {
-      title: 'Introduction',
-      path: '/docs',
+      title: 'Getting Started',
+      path: 'https://unlimitpotential.com/upgrade',
       icon: FiBookOpen,
     },
     
     
     {
-      title: 'Hooks',
-      path: '/docs/hooks',
+      title: 'Maintenance  ',
+      path: '/upgrade',
       icon: FiAnchor,
       heading: true,
       routes: [
         {
-          title: 'useCollapse',
-          path: '/docs/hooks/use-collapse',
+          title: 'more',
+          path: '/en',
         },
-        {
-          title: 'useLocalStorage',
-          path: '/docs/hooks/use-local-storage',
-        },
+       
       ],
     },
   ] as RouteItem[],
