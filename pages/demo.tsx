@@ -55,8 +55,9 @@ const Login: NextPage = () => {
           <blockquote className="mt-10">
             <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
               <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
-                alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
+                &ldquo;We are extremely grateful for all of our friends, family and co-workers who have invested their time, energy and knowledge into getting our ideas off the launchpad!
+
+&rdquo;
               </p>
             </div>
             <footer className="mt-8">
