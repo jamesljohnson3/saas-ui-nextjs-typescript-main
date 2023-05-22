@@ -12,6 +12,7 @@ import { builder } from '@builder.io/react';
 import { AuthProvider } from '@saas-ui/react'
 import { ClerkAuthProvider } from '@saas-ui/clerk'
 import { theme as baseTheme } from '@saas-ui/theme-glass'
+import { NextSeo } from 'next-seo';
 
 
 const frontendApi = 'clerk.vital.gecko-33.lcl.dev'
@@ -33,7 +34,27 @@ const MyApp = ({ Component, pageProps }: AppProps<any>) => {
     {({ authService }) => (
       <SaasProvider>
         <AuthProvider {...authService}>
-
+ <NextSeo
+      title="Unlimit Potential®'"
+      description="Designed to help you manage the bigger picture. Unlimited Now ."
+      canonical="https://www.unlimitpotential.com/"
+      openGraph={{
+        url: 'https://www.unlimitpotential.com',
+        title: 'Unlimit Potential®',
+        description: 'Designed to help you manage the bigger picture. Unlimited Now ',
+        images: [
+          {
+            url: 'https://www.unlimitpotential.com/images/now_logo.png',
+            width: 800,
+            height: 600,
+            alt: 'Og Image Alt',
+            type: 'image/jpeg',
+          },
+          
+        ],
+        siteName: 'unlimitpotential',
+      }}
+    />
     <ChakraProvider theme={theme}>
            
 
