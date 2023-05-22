@@ -23,15 +23,15 @@ const items = [
     items: coreSidebar.routes,
   },
   {
-    title: 'Components',
+    title: 'Resources',
     items: componentsSidebar.routes,
   },
   {
-    title: 'Hooks',
+    title: 'For Creators',
     items: hookSidebar.routes,
   },
   {
-    title: 'Pro',
+    title: 'Seller Tools',
     items: proSidebar.routes,
   },
 ]
