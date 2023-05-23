@@ -42,7 +42,7 @@ const Header = () => {
       <Box>
         {isDesktop && (
           <SearchInput
-            placeholder="Search docs..."
+            placeholder="Search..."
             size="sm"
             borderRadius="md"
             onFocus={onOpen}
