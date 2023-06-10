@@ -60,7 +60,6 @@ export default function Example() {
       position="sticky"
       top="0"
     >
-      <SaasUILogo width="100px" />
     </Box>
   }
   sidebar={
