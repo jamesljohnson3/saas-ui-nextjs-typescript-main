@@ -28,7 +28,7 @@ interface PostData {
 }
 
 
-export const middleware = withEdgeMiddlewareAuth((req, ev) => {
+export const middleware = withEdgeMiddlewareAuth((req) => {
   const { userId, sessionId, getToken } = req.auth;
 
   // Retrieve the token
