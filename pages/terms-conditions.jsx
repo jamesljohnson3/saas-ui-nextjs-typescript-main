@@ -65,8 +65,8 @@ export default function Example() {
   sidebar={
     <Sidebar position="sticky" top="40px">
       <SidebarSection>
-        <NavItem>Home</NavItem>
-        <NavItem>Settings</NavItem>
+      <NavItem onClick={() => handleNavItemClick('#')}>Terms and Conditions</NavItem>
+        <NavItem onClick={() => handleNavItemClick('/privacy-policy')}>Privacy Policy</NavItem>
       </SidebarSection>
     </Sidebar>
   }
