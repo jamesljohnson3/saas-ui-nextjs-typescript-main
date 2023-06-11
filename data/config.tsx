@@ -50,6 +50,14 @@ const siteConfig = {
         label: 'Contact',
       },
       {
+        href: 'https://shop.unlimitpotential.com/privacy-policy',
+        label: 'Privacy',
+      },
+      {
+        href: 'https://shop.unlimitpotential.com/terms-conditions',
+        label: 'Terms',
+      },
+      {
         href: '#',
         label: <FaTwitter size="14" />,
       },
