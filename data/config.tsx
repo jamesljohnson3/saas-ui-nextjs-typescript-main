@@ -50,11 +50,11 @@ const siteConfig = {
         label: 'Contact',
       },
       {
-        href: 'https://shop.unlimitpotential.com/privacy-policy',
+        href: 'https://unlimitpotential.com/privacy-policy',
         label: 'Privacy',
       },
       {
-        href: 'https://shop.unlimitpotential.com/terms-conditions',
+        href: 'https://unlimitpotential.com/terms-conditions',
         label: 'Terms',
       },
       {
