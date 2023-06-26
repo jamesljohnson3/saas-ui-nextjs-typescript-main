@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import SectionWrapper from "../../SectionWrapper"
 import NavLink from "../NavLink"
-import cta_image from '../../../public/cta-img.svg'
 
 const CTA = () => {
     return (
@@ -27,7 +26,7 @@ const CTA = () => {
                     </div>
                 </div>
                 <div className="flex-none w-full md:max-w-xl">
-                    <Image src={cta_image} alt="chart" className='w-full shadow-lg rounded-lg border' />
+                    <Image src="https://res.cloudinary.com/unlimitpotential/image/upload/v1679784782/cld-sample-2.jpg" alt="chart" className='w-full shadow-lg rounded-lg border' />
                 </div>
             </div>
         </SectionWrapper>
