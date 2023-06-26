@@ -1,47 +1,11 @@
 import Image from 'next/image'
-import freshbooks from '../../../public/logos/freshbooks.svg'
-import sendgrid from '../../../public/logos/sendgrid.svg'
-import figma from '../../../public/logos/figma.svg'
-import auth0 from '../../../public/logos/auth0.svg'
-import notion from '../../../public/logos/notion.svg'
-import asana from '../../../public/logos/asana.svg'
-import algolia from '../../../public/logos/algolia.svg'
-import clickup from '../../../public/logos/clickup.svg'
 import SectionWrapper from '../../SectionWrapper'
 
 const logos = [
     {
-        src: freshbooks,
+        src: "freshbooks",
         alt: "freshbooks"
-    },
-    {
-        src: sendgrid,
-        alt: "sendgrid"
-    },
-    {
-        src: figma,
-        alt: "figma"
-    },
-    {
-        src: clickup,
-        alt: "clickup"
-    },
-    {
-        src: algolia,
-        alt: "algolia"
-    },
-    {
-        src: asana,
-        alt: "asana"
-    },
-    {
-        src: notion,
-        alt: "notion"
-    },
-    {
-        src: auth0,
-        alt: "auth0"
-    },
+    }
 ]
 
 
