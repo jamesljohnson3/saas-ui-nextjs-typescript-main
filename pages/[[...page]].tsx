@@ -5,14 +5,7 @@ import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import Box from './cobe';
 
-import Hero from "../components/ui/Hero";
-import LogoGrid from "../components/ui/LogoGrid";
-import Stats from "../components/ui/Stats";
 
-import CenteredCTAText from "../components/ui/CenteredCTAText";
-import CTA from "../components/ui/CTA";
-import FAQs from "../components/ui/FAQs";
-import Features from "../components/ui/Features";
 
 const includedFeatures = [
   'Private forum access',
