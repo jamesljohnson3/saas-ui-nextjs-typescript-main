@@ -8,7 +8,7 @@ const siteConfig = {
   logo: Logo,
   seo: {
     title: 'Unlimit Potential',
-    description: 'Designed to help you manage the bigger picture. Unlimited Now',
+    description: 'Designed to help you manage the bigger picture ',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
