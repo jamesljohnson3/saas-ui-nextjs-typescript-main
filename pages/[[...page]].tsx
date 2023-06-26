@@ -4,6 +4,16 @@ import { BuilderComponent, Builder, builder } from '@builder.io/react';
 import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import Box from './cobe';
+
+import Hero from "../components/ui/Hero";
+import LogoGrid from "../components/ui/LogoGrid";
+import Stats from "../components/ui/Stats";
+
+import CenteredCTAText from "../components/ui/CenteredCTAText";
+import CTA from "../components/ui/CTA";
+import FAQs from "../components/ui/FAQs";
+import Features from "../components/ui/Features";
+
 const includedFeatures = [
   'Private forum access',
   'Member resources',
@@ -73,7 +83,14 @@ export default function Page({ page }: InferGetStaticPropsType<typeof getStaticP
                content="Designed to help you manage the bigger picture. Unlimited Now   "
              />
            </Head>  
-<BuilderComponent model="page" content={page} />      <Box /> <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+<BuilderComponent model="page" content={page} />    
+      <Hero />
+      <LogoGrid />
+      <CenteredCTAText />
+      <CTA />
+      <Features />
+      <Stats />
+      <FAQs /> <Box /> <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
             <p className="mt-6 text-base leading-7 text-gray-600">
